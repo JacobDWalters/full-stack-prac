@@ -15,12 +15,15 @@ dotenv.config();
 //     : {}),
 // }
 
-const pool = new pg.Pool({
-    // connectionString: process.env.DATABASE_URL,
-    // ssl: {
-    //     rejectUnauthorized: false,
-    // }
-});
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
+    }
+  });
+  
+module.exports = pool; 
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
