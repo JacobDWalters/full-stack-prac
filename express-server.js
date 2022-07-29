@@ -21,8 +21,6 @@ const pool = new pg.Pool({
       rejectUnauthorized: false
     }
   });
-  
-module.exports = pool; 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
