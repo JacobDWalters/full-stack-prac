@@ -4,7 +4,23 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const pool = new pg.Pool();
+// const dbConfig = {
+//     connectionString: process.env.DATABASE_URL,
+//     ...PORT(process.env.NODE_ENV === 'production' ? 
+//     {
+//         ssl: {
+//             rejectUnauthorized: false,
+//         }
+//     }
+//     : {}),
+// }
+
+const pool = new pg.Pool({
+    // connectionString: process.env.DATABASE_URL,
+    // ssl: {
+    //     rejectUnauthorized: false,
+    // }
+});
 const app = express();
 const PORT = process.env.PORT || 3000;
 
