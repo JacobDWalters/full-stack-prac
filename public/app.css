@@ -1,0 +1,30 @@
+
+.headings {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26pt;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    align-content: space-around;
+    gap: 50px;
+}
+
+.job {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: max-content;
+}
+
+.workers {
+    text-align: center;
+    border: 1px dotted black;
+    margin: 5px;
+}

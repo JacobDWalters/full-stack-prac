@@ -1,0 +1,17 @@
+{
+  "name": "full-stack-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express-server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon express-server.js",
+    "start": "node express-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.3"
+  }
+}
